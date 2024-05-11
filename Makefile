@@ -19,6 +19,9 @@ migrate:
 makemigrations:
 	$(DC) exec web python manage.py makemigrations
 
+loaddata:
+	$(DC) exec web python manage.py loaddata init-data.json
+
 superuser:
 	$(DC) exec web python manage.py createsuperuser
 
@@ -27,9 +30,6 @@ test:
 
 shell:
 	$(DC) exec web python manage.py shell
-
-run:
-	$(DC) exec web python manage.py runserver 0.0.0.0:8000
 
 clean:
 	$(DC) down --volumes --remove-orphans

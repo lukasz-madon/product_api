@@ -1,0 +1,54 @@
+[
+    {
+      "model": "product_api.product",
+      "pk": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "fields": {
+        "name": "Dried hibiscus flowers",
+        "price": 19.99,
+        "quantity_in_stock": 10,
+        "created_at": "2024-05-11T16:58:10.322Z",
+        "updated_at": "2024-05-11T16:58:10.322Z"
+      }
+    },
+    {
+      "model": "product_api.product",
+      "pk": "1fa85f64-5717-4562-b3fc-4c963f66af11",
+      "fields": {
+        "name": "Slippery elm powder",
+        "price": 44,
+        "quantity_in_stock": 22,
+        "created_at": "2024-05-11T16:58:10.322Z",
+        "updated_at": "2024-05-11T16:58:10.322Z"
+      }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$f6Gi5mumpjbojZyU9yiuc1$x2iovh6ZLcn0N29/c2SuYtJ7CRTec23UvZ54DYdX3h4=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "testme",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-05-11T16:26:54.933Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "product_api.order",
+        "pk": "7fa85f64-1717-4562-b3fc-1c963f26af33",
+        "fields": {
+          "quantity": 3,
+          "user": 2,
+          "product": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "created_at": "2024-05-11T16:58:10.322Z",
+          "updated_at": "2024-05-11T16:58:10.322Z"
+        }
+    }
+]
+  
